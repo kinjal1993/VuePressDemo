@@ -6,5 +6,6 @@ npm i -g vuepress
 2. Running the VuePress Server
 vuepress dev
 
-3. Installing vuepress bar
-npm i --save vuepress-bar
+3. npm install express
+
+4. npm install ejs

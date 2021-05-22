@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>markdown-it demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/2.4.1/lodash.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.6/markdown-it.min.js"></script>
+    <script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Ancient IE support - load shiv & kill broken highlighter--><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script>window.hljs = null;</script>
+<![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Add Markdown File
+      </h1>
+    </div>
+    <div class="container full-height">
+        <form enctype="application/x-www-form-urlencoded" action="/admin/generate-md" method="POST" name="form" id ="form">
+      <div class="row full-height">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <label>Select Source Folder</label>
+              <select name="path" class="form-control">
+                <% paths.forEach(function(value, index) { %>
+                  <option value="<%= value.path %>"><%= value.title %> - <%= value.path %></option>
+                <% }); %>
+              </select>
+            </div>
+            <div class="col-sm-6 form-group">
+              <label>Create New</label><br>
+              <input type="radio" name="type" value="1">
+              <label>Folder</label>
+              <input checked type="radio" name="type" value="2">
+              <label>File in the existing folder</label>
+            </div>
+            <div class="col-sm-12 form-group">
+              <label>Title of file or folder<br><small>(if you are creating new folder, new file will be created named "README.md")</small></label>
+              <input type="text" name  = "title" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 form-group full-height">
+          <label>Content</label>
+          <textarea name = "markdown" class="form-control source full-height"></textarea>
+        </div>
+        <section class="col-xs-6 form-group full-height">
+          <label>Preview</label>
+          <div class="result-html full-height"></div>
+          <pre class="hljs result-src full-height"><code class="result-src-content full-height"></code></pre>
+          <pre class="hljs result-debug full-height"><code class="result-debug-content full-height"></code></pre>
+        </section>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+              <button type = "submit" id = "generate" class="btn btn-success">Add</button>
+          </div>
+      </div>
+    </form>
+    </div>
+
+  </body>
+</html>

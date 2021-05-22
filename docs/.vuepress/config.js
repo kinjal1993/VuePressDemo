@@ -1,5 +1,4 @@
-const directories = require("./nested-directories");
-sidebar = directories.nested_directories;
+const sidebar = require("../../lib/sidebar").sidebar;
 
 module.exports = {
   title: 'Hello, VueNYC!',
