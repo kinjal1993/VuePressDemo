@@ -24,7 +24,10 @@
     "directory-tree": "^2.2.9",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "tree-flatten": "^1.0.0"
+    "tree-flatten": "^1.0.0",
+    "vuepress": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

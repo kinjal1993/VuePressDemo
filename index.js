@@ -1,15 +1,13 @@
 const express = require('express');
 const app = express();
-var bodyParser = require('body-parser')
+const path = require('path');
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({ // alternative
-    extended: true
-}));
+app.use(express.urlencoded());
 
-// routes
+//the express routes.
 const adminRoutes = require('./routes/admin');
 app.use('/admin', adminRoutes);
 

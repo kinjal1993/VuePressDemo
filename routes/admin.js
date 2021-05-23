@@ -5,9 +5,9 @@ const directories = require("../lib/traversedir");
 
 // index page
 router.get('/', function(req, res) {
-    const dirName = './docs/';
-    paths = directories.directories;
-    res.render('pages/index', { paths: paths});
+    const action = '/admin/generate-md';
+    const paths = directories.directories;
+    res.render('pages/index', { paths: paths, action: action });
 });
 
 router.post('/generate-md', adminController.generate_md);
