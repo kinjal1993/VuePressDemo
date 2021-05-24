@@ -1,6 +1,6 @@
 # Directory Structure for docs
 
-I have followed the recommended structure by **VuePress** which is as follows:
+The project follows the recommended structure by **VuePress** which is as follows:
 
 ```bash
 ├── docs

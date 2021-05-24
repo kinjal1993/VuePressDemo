@@ -5,7 +5,7 @@ const directories = require("../lib/traversedir");
 
 // index page
 router.get('/', function(req, res) {
-    const action = '/admin/generate-md';
+    const action = '/generate-md';
     const paths = directories.directories;
     res.render('pages/index', { paths: paths, action: action });
 });
