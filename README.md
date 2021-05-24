@@ -10,7 +10,7 @@ To make easy to add a new markdown file I have created a utility using **Express
 https://github.com/kinjal1993/VuePressDemo/
 
 ## Netlify Link
-https://60aab2dd9972afccb1367997--practical-kepler-9889c2.netlify.app/
+https://practical-kepler-9889c2.netlify.app/
 
 # Quick Start
 

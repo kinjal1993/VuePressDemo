@@ -7,4 +7,4 @@ On [Netlify](https://netlify.com), setup up a new project from GitHub with the f
 3. Hit the deploy button.
 
 ## Here's the Netlify link for this project
-https://60aab2dd9972afccb1367997--practical-kepler-9889c2.netlify.app/
+https://practical-kepler-9889c2.netlify.app/
