@@ -5,7 +5,7 @@ const str_functions = require('../lib/string-functions')
 
 exports.generate_md = (req, res, next) => {
     const markdown = req.body.markdown;
-    const name = str_functions.convertFromTitleToFolder(req.body.title);
+    const name = str_functions.convertFromTitleToFolder(req.body.title); // removes special characters
     const path = req.body.path + '/';
     const type = req.body.type;
     let fileName;
@@ -17,14 +17,13 @@ exports.generate_md = (req, res, next) => {
             fs.mkdir(folderName, function (err) {
                 if (err) {
                     console.log(err)
-                } else {
-
                 }
             })
         } catch (err) {
             console.error(err)
         }
 
+        // default file in the folder
         fileName = folderName + "/README.md";
     }
     else // new file in an existing folder
@@ -34,9 +33,9 @@ exports.generate_md = (req, res, next) => {
     }
 
     try {
-        const data = fs.writeFileSync(fileName, markdown);
+        const data = fs.writeFileSync(fileName, markdown); // generate markup file
         //file written successfully
-        res.redirect('/admin');
+        res.redirect('/');
     } catch (err) {
         console.error(err)
     }

@@ -9,7 +9,7 @@ app.use(express.urlencoded());
 
 //the express routes.
 const adminRoutes = require('./routes/admin');
-app.use('/admin', adminRoutes);
+app.use('/', adminRoutes);
 
 // set static directory
 app.use(express.static(__dirname + '/public'));

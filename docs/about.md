@@ -1,10 +1,11 @@
 ---
 sidebar: false
 ---
-# About this project
+# About the developer
 
-I have created this project as a part of the selection process for the position of Web Development Intern at EntHire.
+## I am Kinjal Pathak from Surat, Gujarat. 
 
-I have used vuepress plugin to create the documentation pages. Vuepress has the inbuilt functionality of converting the folder structure having markdown(.md) files into a fully designed documentation pages.
+I am currently employed at iROJGAR (Placement services in Surat, Gujarat) as a senior full stack developer and have been with the company over 2 years.
 
-To make the task easy for the admin to add new md files, I have also created a utility using express.js which can be used as an in-house product.
+[Github](https://github.com/kinjal1993/)
+[Linkedin](https://www.linkedin.com/in/kinjal-pathak-20/)

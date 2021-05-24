@@ -1,3 +1,4 @@
+// dynamic sidebar from folder structure
 const sidebar = require("../../lib/sidebar").sidebar;
 
 module.exports = {
@@ -5,15 +6,15 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: 'Learn More',
-        ariaLabel: 'Learn More',
+        text: 'More on VuePress',
+        ariaLabel: 'More on VuePress',
         items: [
           { text: 'VuePress Official Docs', link: 'https://vuepress.vuejs.org/theme/' },
           { text: 'Creating Blogs', link: 'https://vuepress.vuejs.org/theme/blog-theme.html' }
         ]
       },
       {
-        text: 'About',
+        text: 'About the developer',
         link: '/about.html'
       }
     ],

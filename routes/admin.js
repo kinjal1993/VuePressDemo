@@ -10,6 +10,7 @@ router.get('/', function(req, res) {
     res.render('pages/index', { paths: paths, action: action });
 });
 
+// form action
 router.post('/generate-md', adminController.generate_md);
 
 module.exports = router;
