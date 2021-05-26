@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.set('views', path.join(__dirname, '/views'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 

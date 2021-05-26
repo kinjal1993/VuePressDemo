@@ -1,10 +1,10 @@
-const convertFromFolderToTitle = (str) => {
+const makeFolderTitle = (str) => {
     return str.replace(/-/g, " ").replace(".md", "").replace(/\b[a-z]/g, function () {
         return arguments[0].toUpperCase();
     });
 }
 
-const convertFromTitleToFolder = (Text) =>
+const makeFolderName = (Text) =>
 {
     return Text
         .toLowerCase()
@@ -14,6 +14,6 @@ const convertFromTitleToFolder = (Text) =>
 }
 
 module.exports = {
-    'convertFromTitleToFolder': convertFromTitleToFolder,
-    'convertFromFolderToTitle': convertFromFolderToTitle
+    'makeFolderTitle': makeFolderTitle,
+    'makeFolderName': makeFolderName
 }

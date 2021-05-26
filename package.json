@@ -2,14 +2,13 @@
   "name": "vuepressdemo",
   "version": "1.0.0",
   "description": "creates website documentation using vuepress",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:build": "cd docs && vuepress build",
-    "start": "nodemon index.js"
+    "start": "node add-markup/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,13 +21,12 @@
   },
   "homepage": "https://github.com/kinjal1993/VuePressDemo#readme",
   "dependencies": {
-    "directory-tree": "^2.2.9",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "tree-flatten": "^1.0.0",
     "vuepress": "^1.8.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "directory-tree": "^2.2.9",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "tree-flatten": "^1.0.0"
   }
 }
