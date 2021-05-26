@@ -27,12 +27,13 @@ cd <folder-name>
 npm install
 ```
 
-The project is divided into two parts:
+The project is divided into two folders:
 
 **1. docs**
-It contains all the markup files and .vuepress folder. All the contents in sidebar are loaded from `docs/guide/` dynamically so that no need to modify `config.js` each time a new `.md` file is added.
 
-## Development
+It contains all the markup files and .vuepress folder. All the contents in sidebar are loaded from `docs/guide/` dynamically so no need to modify `config.js` each time a new `.md` file is added.
+
+## While Development
 ``` bash
 cd docs
 vuepress dev
@@ -45,6 +46,7 @@ vuepress build
 ```
 
 **2. add-markup**
+
 It is a utility built using `express.js` to make easy for the admin to add new markup files to `docs/guide` folder.
 
 ``` bash
