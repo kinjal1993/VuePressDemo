@@ -6,7 +6,7 @@ const dirTree = require('directory-tree');
 const flatten = require('tree-flatten');
 const helper_functions = require('../lib/helper-functions');
 const constants = require('../lib/constants');
-const dirPath = constants.DOCS_PATH;
+const dirPath = constants.DOCS_PATH + '/';
 const docs_folder = constants.DOCS_FOLDER;
 
 // index page

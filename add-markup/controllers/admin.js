@@ -8,6 +8,7 @@ exports.generate_md = (req, res, next) => {
     const name = helper_functions.makeFolderName(req.body.title); // removes special characters
     const path = req.body.path;
     const type = req.body.type;
+
     let fileName;
     let folderName;
     if (type == '1') // new folder
